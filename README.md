@@ -1,76 +1,84 @@
-# VoiceCart — Voice Command Shopping Assistant
+# 🛒 VoiceCart — Voice Command Shopping Assistant
 
-A lightweight voice-first shopping list manager built for the Software Engineering technical assessment.
+A lightweight **voice-first shopping list manager** built with Flask, JavaScript, and the Web Speech API. VoiceCart allows users to manage shopping lists using natural-language voice commands, search for products, get smart suggestions, and find product substitutes.
 
-## Features
+🔗 **GitHub Repository:**  
+https://github.com/AdityaHatwar22/voice-command-shopping-assistant
 
-- Voice commands such as `Add milk`, `I want to buy bananas`, `Add 2 bottles of water`, and `Remove milk`.
-- Natural-language command parsing for add/remove actions and quantities.
-- Multilingual voice recognition: English (India), English (US), Hindi and Marathi (browser-dependent).
-- Smart suggestions from shopping-list history and seasonal items.
-- Product substitutes such as almond milk for milk.
-- Voice/search-style product lookup with brand and maximum-price filters.
-- Automatic product categorization.
-- Responsive, minimalist UI with real-time transcript and confirmation feedback.
-- Basic error handling and loading-free lightweight interactions.
-- LocalStorage keeps the shopping list/history in the browser.
-- Flask REST endpoints keep the application simple and deployable.
+---
 
-## Tech Stack
+## ✨ Features
 
-- Python 3
-- Flask
-- HTML5 / CSS3 / JavaScript
-- Web Speech API for browser voice recognition
-- LocalStorage for client-side shopping history
+- 🎙️ **Voice-based shopping commands**
+  - `Add milk`
+  - `I want to buy bananas`
+  - `Add 2 bottles of water`
+  - `Remove milk`
 
-## Run locally
+- 🧠 **Natural-language command parsing**
+  - Supports flexible add/remove commands
+  - Detects quantities from user commands
 
-```bash
-git clone YOUR_GITHUB_REPO_URL
-cd voice-command-shopping-assistant
+- 🌍 **Multilingual voice recognition**
+  - English (India)
+  - English (US)
+  - Hindi
+  - Marathi
+  - Browser-dependent support
 
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-# source venv/bin/activate
+- 💡 **Smart shopping suggestions**
+  - Suggestions based on shopping-list history
+  - Seasonal item suggestions
 
-pip install -r requirements.txt
-python app.py
-```
+- 🔄 **Product substitutes**
+  - Example: alternatives for milk such as almond milk
 
-Open `http://127.0.0.1:5000`.
+- 🔎 **Product search and filtering**
+  - Search products by name
+  - Filter by brand
+  - Filter by maximum price
 
-Use Chrome or Edge for the best Speech Recognition support.
+- 🗂️ **Automatic product categorization**
 
-## Example commands
+- 📱 **Responsive user interface**
+  - Real-time voice transcript
+  - Confirmation feedback
+  - Minimal and lightweight design
 
-- `Add milk`
-- `I want to buy bananas`
-- `Add 5 oranges`
-- `Remove milk`
-- `Buy 2 bottles of water`
+- 💾 **LocalStorage support**
+  - Shopping list and history are stored locally in the browser
 
-## API
+- 🔌 **Flask REST API**
+  - Simple API endpoints for commands, search, suggestions, and substitutes
 
-- `POST /api/command` — parse a natural-language shopping command.
-- `GET /api/search?q=apples&brand=FarmFresh&max_price=5` — product search/filter.
-- `GET /api/suggestions?history=milk,bread` — smart suggestions.
-- `GET /api/substitutes?item=milk` — substitute recommendations.
+---
 
-## Deployment
+## 🛠️ Tech Stack
 
-This is a Flask application and can be deployed to a Python-capable hosting service. For a quick demo, create a web service from the GitHub repository and use:
+| Technology | Purpose |
+|------------|---------|
+| Python 3 | Backend programming |
+| Flask | REST API and web server |
+| HTML5 | Application structure |
+| CSS3 | UI styling and responsiveness |
+| JavaScript | Frontend logic and interactions |
+| Web Speech API | Voice recognition |
+| LocalStorage | Client-side shopping history |
 
-**Build command:** `pip install -r requirements.txt`
+---
 
-**Start command:** `gunicorn app:app`
+## 📂 Project Structure
 
-Add `gunicorn` to `requirements.txt` before deployment if your host does not provide it automatically.
-
-For production, HTTPS is recommended because browser microphone permissions work best on secure origins.
-
-## Assessment approach
-
-The implementation prioritizes the assessment's required voice input, NLP-style flexible commands, multilingual support, smart suggestions, shopping-list management, search/filtering, responsive UI, error handling, documentation, and deployability while keeping the project small enough to understand and demonstrate in an interview.
+```text
+voice-command-shopping-assistant/
+│
+├── app.py
+├── requirements.txt
+├── .gitignore
+│
+├── templates/
+│   └── index.html
+│
+└── static/
+    ├── style.css
+    └── script.js
