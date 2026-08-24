@@ -1,4 +1,8 @@
-A lightweight **voice-first shopping list manager** built with Flask, JavaScript, and the Web Speech API. VoiceCart allows users to manage shopping lists using natural-language voice commands, search for products, get smart suggestions, and find product substitutes.
+# 🛒 VoiceCart — Voice Command Shopping Assistant
+
+A lightweight **voice-first shopping list manager** built with Flask, JavaScript, and the Web Speech API.
+
+VoiceCart allows users to manage shopping lists using natural-language voice commands, search for products, get smart suggestions, and find product substitutes.
 
 🔗 **GitHub Repository:**  
 https://github.com/AdityaHatwar22/voice-command-shopping-assistant
@@ -22,7 +26,6 @@ https://github.com/AdityaHatwar22/voice-command-shopping-assistant
   - English (US)
   - Hindi
   - Marathi
-  - Browser-dependent support
 
 - 💡 **Smart shopping suggestions**
   - Suggestions based on shopping-list history
@@ -44,10 +47,13 @@ https://github.com/AdityaHatwar22/voice-command-shopping-assistant
   - Minimal and lightweight design
 
 - 💾 **LocalStorage support**
-  - Shopping list and history are stored locally in the browser
+  - Shopping list and history stored in the browser
 
 - 🔌 **Flask REST API**
-  - Simple API endpoints for commands, search, suggestions, and substitutes
+  - Command processing
+  - Product search
+  - Smart suggestions
+  - Product substitutes
 
 ---
 
@@ -58,12 +64,13 @@ https://github.com/AdityaHatwar22/voice-command-shopping-assistant
 | Python 3 | Backend programming |
 | Flask | REST API and web server |
 | HTML5 | Application structure |
-| CSS3 | UI styling and responsiveness |
-| JavaScript | Frontend logic and interactions |
+| CSS3 | UI styling |
+| JavaScript | Frontend logic |
 | Web Speech API | Voice recognition |
-| LocalStorage | Client-side shopping history |
+| LocalStorage | Client-side storage |
 
 ---
+
 
 ## 📂 Project Structure
 
