@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiceCart - Shopping Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div>
+      <p class="eyebrow">VOICE COMMAND SHOPPING ASSISTANT</p>
+      <h1>VoiceCart</h1>
+      <p class="subtitle">Speak naturally. Build your shopping list. Get smart suggestions.</p>
+    </div>
+    <select id="language" aria-label="Voice language">
+      <option value="en-IN">English (India)</option>
+      <option value="hi-IN">Hindi</option>
+      <option value="mr-IN">Marathi</option>
+      <option value="en-US">English (US)</option>
+    </select>
+  </header>
+
+  <section class="voice-card">
+    <button id="micBtn" class="mic" title="Start voice recognition">🎙️</button>
+    <div>
+      <h2 id="voiceStatus">Tap the microphone</h2>
+      <p id="transcript">Try: “Add 2 bottles of water” or “Remove milk”.</p>
+    </div>
+  </section>
+
+  <div id="message" class="message"></div>
+
+  <main class="grid">
+    <section class="panel list-panel">
+      <div class="panel-head">
+        <h2>My Shopping List</h2>
+        <button id="clearBtn" class="ghost">Clear all</button>
+      </div>
+      <div id="list"></div>
+      <div id="empty" class="empty">Your list is empty. Add an item by voice or with the search panel.</div>
+    </section>
+
+    <aside class="side">
+      <section class="panel">
+        <div class="panel-head"><h2>Smart Suggestions</h2></div>
+        <div id="suggestions" class="cards"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Voice Search</h2></div>
+        <input id="searchInput" placeholder="e.g. organic apples">
+        <div class="filters">
+          <input id="brandInput" placeholder="Brand">
+          <input id="priceInput" type="number" step="0.01" placeholder="Max price">
+        </div>
+        <button id="searchBtn" class="primary">Search products</button>
+        <div id="results"></div>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    <span>Browser Speech Recognition • Stateless Flask API • Local shopping history</span>
+  </footer>
+</div>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
