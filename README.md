@@ -1,5 +1,3 @@
-# 🛒 VoiceCart — Voice Command Shopping Assistant
-
 A lightweight **voice-first shopping list manager** built with Flask, JavaScript, and the Web Speech API. VoiceCart allows users to manage shopping lists using natural-language voice commands, search for products, get smart suggestions, and find product substitutes.
 
 🔗 **GitHub Repository:**  
@@ -56,7 +54,7 @@ https://github.com/AdityaHatwar22/voice-command-shopping-assistant
 ## 🛠️ Tech Stack
 
 | Technology | Purpose |
-|------------|---------|
+|---|---|
 | Python 3 | Backend programming |
 | Flask | REST API and web server |
 | HTML5 | Application structure |
