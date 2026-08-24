@@ -75,7 +75,7 @@ https://github.com/AdityaHatwar22/voice-command-shopping-assistant
 
 Here is a screenshot of the Voice Command Shopping Assistant:
 
-![Voice Command Shopping Assistant](Screenshot2026-08-2212400)
+![Voice Command Shopping Assistant]()
 ## 📂 Project Structure
 
 ```text
